@@ -9,18 +9,28 @@ class Post extends Model
 {
     use HasFactory;
 
-    protected $fillable = ['titre', 'content',  'audio'];
+    protected $fillable = ['titre', 'mini_content', 'content', 'audio', 'video', 'image', 'slug', 'tag', 'categorie_id','user_id','publie'];
+    //protected $fillable = ['slug', 'date_publi'];
 
-    // , 'video', 'image', 'date_publi', 'slug', 'tag', 'categorie_id','user_id'
-    
+    public function categories()
+    {
+        return $this->belongsTo(Categorie::class, 'categorie_id');
+    }
 
     public function users()
     {
         return $this->belongsTo(User::class, 'user_id');
     }
 
-    public function categories()
+    public function commentaires()
     {
-        return $this->belongsTo(Categorie::class, 'categorie_id');
+        return $this->hasMany(Commentaire::class);
     }
+
+    public function soumet()
+    {
+        $this->publie = false;
+        $this->save();
+    }
+
 }

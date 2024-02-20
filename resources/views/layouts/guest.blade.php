@@ -42,8 +42,8 @@
 	<!-- meta character set -->
 	<meta charset="UTF-8">
 	<!-- Site Title -->
-	<title>Culture</title>
-
+	<title>Biblioteque</title>
+    @include('liens.lien_css')
 	@include('liens.lien_css_auth')
 	@livewireStyles
 
@@ -51,11 +51,14 @@
 
 <body>
 
+ @include('layouts.head')
 	
 
         {{$slot}}
 
+        @include('layouts.foot')
 
+        @include('liens.lien_js')
 @include('liens.lien_js_auth')
 @livewireScripts
 

@@ -1,138 +1,187 @@
-
-<footer class="site-footer-gallery">
-		<div class="wrapper">
-			<a href="https://instagram.com/liviucerchez/" target="_blank" class="intro-gallery">
-				<span class="intro-gallery-title">Find more personal moments <span class="highlight">on Instagram</span></span>
-				<em class="intro-gallery-username">@liviucerchez</em>
-			</a>
-			<div class="gallery-photo">
-				<a href="https://instagram.com/liviucerchez/" target="_blank">
-					<img src="tmp/sample-540x540.jpg" width="540" height="540" loading="lazy" alt="">
-					<span class="data">
-						<span class="meta">
-							<span class="likes"><em class="mdi mdi-heart"></em> <strong class="count">3</strong></span>
-						</span>
-					</span>
-				</a>
-			</div>
-			<div class="gallery-photo">
-				<a href="https://instagram.com/liviucerchez/" target="_blank">
-					<img src="tmp/sample-540x540.jpg" width="540" height="540" loading="lazy" alt="">
-					<span class="data">
-						<span class="meta">
-							<span class="likes"><em class="mdi mdi-heart"></em> <strong class="count">5</strong></span>
-						</span>
-					</span>
-				</a>
-			</div>
-			<div class="gallery-photo">
-				<a href="https://instagram.com/liviucerchez/" target="_blank">
-					<img src="tmp/sample-540x540.jpg" width="540" height="540" loading="lazy" alt="">
-					<span class="data">
-						<span class="meta">
-							<span class="likes"><em class="mdi mdi-heart"></em> <strong class="count">5</strong></span>
-						</span>
-					</span>
-				</a>
-			</div>
-			<div class="gallery-photo">
-				<a href="https://instagram.com/liviucerchez/" target="_blank">
-					<img src="tmp/sample-540x540.jpg" width="540" height="540" loading="lazy" alt="">
-					<span class="data">
-						<span class="meta">
-							<span class="likes"><em class="mdi mdi-heart"></em> <strong class="count">2</strong></span>
-						</span>
-					</span>
-				</a>
-			</div>
-			<div class="gallery-photo">
-				<a href="https://instagram.com/liviucerchez/" target="_blank">
-					<img src="tmp/sample-540x540.jpg" width="540" height="540" loading="lazy" alt="">
-					<span class="data">
-						<span class="meta">
-							<span class="likes"><em class="mdi mdi-heart"></em> <strong class="count">2</strong></span>
-						</span>
-					</span>
-				</a>
-			</div>
-			<div class="gallery-photo">
-				<a href="https://instagram.com/liviucerchez/" target="_blank">
-					<img src="tmp/sample-540x540.jpg" width="540" height="540" loading="lazy" alt="">
-					<span class="data">
-						<span class="meta">
-							<span class="likes"><em class="mdi mdi-heart"></em> <strong class="count">2</strong></span>
-						</span>
-					</span>
-				</a>
-			</div>
-			<div class="gallery-photo">
-				<a href="https://instagram.com/liviucerchez/" target="_blank">
-					<img src="tmp/sample-540x540.jpg" width="540" height="540" loading="lazy" alt="">
-					<span class="data">
-						<span class="meta">
-							<span class="likes"><em class="mdi mdi-heart"></em> <strong class="count">9</strong></span>
-						</span>
-					</span>
-				</a>
-			</div>
-			<div class="gallery-photo">
-				<a href="https://instagram.com/liviucerchez/" target="_blank">
-					<img src="tmp/sample-540x540.jpg" width="540" height="540" loading="lazy" alt="">
-					<span class="data">
-						<span class="meta">
-							<span class="likes"><em class="mdi mdi-heart"></em> <strong class="count">12</strong></span>
-						</span>
-					</span>
-				</a>
-			</div>
-			<a href="https://instagram.com/liviucerchez/" target="_blank" class="outro-gallery"><span>Don't miss daily inspiration and updates</span></a>
-		</div>
-	</footer>
-
-	<footer class="sales-box">
-		<div class="wrapper">
-			<div class="sales-box-cover">
-				<a href="#" class="shine-on-hover"><img src="tmp/sample-540x540.jpg" width="540" height="540" loading="lazy" alt=""></a>
-			</div>
-			<div class="sales-box-content">
-				<h2>New Stuff Each Week!</h2>
-				<p>Listen below and order your copy from Amazon, iTunes or your favorite record store. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia conseqa untur magni dolores eos qui ratione sequi.</p>
-				<p><a href="#" class="button button-primary"><span class="mdi mdi-amazon"></span> Amazon</a> <a href="#" class="button button-primary"><span class="mdi mdi-apple"></span> iTunes</a> <a href="#" class="button button-primary"><span class="mdi mdi-spotify"></span> Spotify</a></p>
-			</div>
-		</div>
-		<img src="tmp/sample-featured.jpg" alt="">
-	</footer>
-
-	<footer class="site-footer">
-		<a id="scroll-to-top" class="scroll-to-top" href="#top-header" title="To the top"><em class="mdi mdi-chevron-up"></em><svg width="150" height="50" viewBox="0 0 39.687499 13.229167"><path d="M-.0035 296.999c9.007 0 11.8302-13.1833 19.8324-13.1852C27.8372 283.8118 30.636 297 39.683 297c9.047 0-48.6935-.001-39.6864-.001z" transform="translate(0,-283.77081)"></path></svg></a>
-		<div class="widget-area">
-			<div class="widget widget_logo">
-				<h3><a href="index.html" class="footer-title">Bateria</a></h3>
-			</div>
-			<div class="widget widget_nav_menu">
-				<nav class="social-navigation">
-					<ul class="menu">
-						<li><a href="https://twitter.com"><span class="screen-reader-text">Twitter profile</span></a></li>
-						<li><a href="https://instagram.com"><span class="screen-reader-text">Instagram profile</span></a></li>
-						<li><a href="https://youtube.com"><span class="screen-reader-text">YouTube page</span></a></li>
-					</ul>
-				</nav>
-			</div>
-			<div class="widget widget_text">
-				<div class="textwidget">
-					<h3 class="widget-title">Don't miss our weekly episodes. Subscribe now!</h3>
-					<form class="mc4wp-form" method="post" action="index.html">
-						<div class="mc4wp-form-fields">
-							<p>A template with a simple and organized approach to presenting your content with understated charm and undeniable appeal.</p>
-							<p class="one-line">
-								<label for="subscribe_email" class="sr-only">Subscription Email</label> <input type="email" name="email" id="subscribe_email" placeholder="Your email address..." required=""><input type="submit" value="Subscribe" class="button-color button-filled">
-							</p>
+{{--
+<!-- Start Footer  -->
+<footer>
+        <div class="footer-main">
+            <div class="container">
+				<div class="row">
+					<div class="col-lg-4 col-md-12 col-sm-12">
+						<div class="footer-top-box">
+							<h3>Business Time</h3>
+							<ul class="list-time">
+								<li>Monday - Friday: 08.00am to 05.00pm</li> <li>Saturday: 10.00am to 08.00pm</li> <li>Sunday: <span>Closed</span></li>
+							</ul>
 						</div>
-					</form>
+					</div>
+					<div class="col-lg-4 col-md-12 col-sm-12">
+						<div class="footer-top-box">
+							<h3>Newsletter</h3>
+							<form class="newsletter-box">
+								<div class="form-group">
+									<input class="" type="email" name="Email" placeholder="Email Address*" />
+									<i class="fa fa-envelope"></i>
+								</div>
+								<button class="btn hvr-hover" type="submit">Submit</button>
+							</form>
+						</div>
+					</div>
+					<div class="col-lg-4 col-md-12 col-sm-12">
+						<div class="footer-top-box">
+							<h3>Social Media</h3>
+							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+							<ul>
+                                <li><a href="#"><i class="fab fa-facebook" aria-hidden="true"></i></a></li>
+                                <li><a href="#"><i class="fab fa-twitter" aria-hidden="true"></i></a></li>
+                                <li><a href="#"><i class="fab fa-linkedin" aria-hidden="true"></i></a></li>
+                                <li><a href="#"><i class="fab fa-google-plus" aria-hidden="true"></i></a></li>
+                                <li><a href="#"><i class="fa fa-rss" aria-hidden="true"></i></a></li>
+                                <li><a href="#"><i class="fab fa-pinterest-p" aria-hidden="true"></i></a></li>
+                                <li><a href="#"><i class="fab fa-whatsapp" aria-hidden="true"></i></a></li>
+                            </ul>
+						</div>
+					</div>
 				</div>
-			</div>
-		</div>
-		<div class="copyright">
-			<p>&copy; 2023 <a href="index.html">Bateria</a> &mdash; Created with &hearts; in Europe. All Rights Reserved. &mdash; <a class="privacy-policy-link" href="#">Privacy Policy</a></p>
-		</div>
-	</footer>
+				<hr>
+                <div class="row">
+                    <div class="col-lg-4 col-md-12 col-sm-12">
+                        <div class="footer-widget">
+                            <h4>About Freshshop</h4>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p> 
+							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p> 							
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-12 col-sm-12">
+                        <div class="footer-link">
+                            <h4>Information</h4>
+                            <ul>
+                                <li><a href="#">About Us</a></li>
+                                <li><a href="#">Customer Service</a></li>
+                                <li><a href="#">Our Sitemap</a></li>
+                                <li><a href="#">Terms &amp; Conditions</a></li>
+                                <li><a href="#">Privacy Policy</a></li>
+                                <li><a href="#">Delivery Information</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-12 col-sm-12">
+                        <div class="footer-link-contact">
+                            <h4>Contact Us</h4>
+                            <ul>
+                                <li>
+                                    <p><i class="fas fa-map-marker-alt"></i>Address: Michael I. Days 3756 <br>Preston Street Wichita,<br> KS 67213 </p>
+                                </li>
+                                <li>
+                                    <p><i class="fas fa-phone-square"></i>Phone: <a href="tel:+1-888705770">+1-888 705 770</a></p>
+                                </li>
+                                <li>
+                                    <p><i class="fas fa-envelope"></i>Email: <a href="mailto:contactinfo@gmail.com">contactinfo@gmail.com</a></p>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+</footer>
+<!-- End Footer  -->
+
+<!-- Start copyright  -->
+<div class="footer-copyright">
+        <p class="footer-company">All Rights Reserved. &copy; 2018 <a href="#">ThewayShop</a> Design By :
+            <a href="https://html.design/">html design</a></p>
+</div>
+<!-- End copyright  -->
+
+    <a href="#" id="back-to-top" title="Back to top" style="display: none;">&uarr;</a>
+--}}
+
+
+
+<!--start footer-->
+<section class="footer-section bg-section-2 section-padding">
+    <div class="container">
+       <div class="row row-cols-1 row-cols-lg-4 g-4">
+        <div class="col">
+          <div class="footer-widget-6">
+            <img src="assets/images/logo.webp" class="logo-img mb-3" alt="">
+            <h5 class="mb-3 fw-bold">About Us</h5>
+             <p class="mb-2">There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable.</p>
+
+             <a class="link-dark" href="javascript:;">Read More</a>
+          </div>
+        </div>
+        <div class="col">
+          <div class="footer-widget-7">
+            <h5 class="mb-3 fw-bold">Explore</h5>
+             <ul class="widget-link list-unstyled">
+               <li><a href="javascript:;">Fashion</a></li>
+               <li><a href="javascript:;">Women</a></li>
+               <li><a href="javascript:;">Furniture</a></li>
+               <li><a href="javascript:;">Shoes</a></li>
+               <li><a href="javascript:;">Topwear</a></li>
+               <li><a href="javascript:;">Brands</a></li>
+               <li><a href="javascript:;">Kids</a></li>
+             </ul>
+          </div>
+        </div>
+        <div class="col">
+          <div class="footer-widget-8">
+            <h5 class="mb-3 fw-bold">Company</h5>
+             <ul class="widget-link list-unstyled">
+               <li><a href="javascript:;">About Us</a></li>
+               <li><a href="javascript:;">Contact Us</a></li>
+               <li><a href="javascript:;">FAQ</a></li>
+               <li><a href="javascript:;">Privacy</a></li>
+               <li><a href="javascript:;">Terms</a></li>
+               <li><a href="javascript:;">Complaints</a></li>
+             </ul>
+          </div>
+        </div>
+        <div class="col">
+          <div class="footer-widget-9">
+            <h5 class="mb-3 fw-bold">Follow Us</h5>
+             <div class="social-link d-flex align-items-center gap-2">
+               <a href="javascript:;"><i class="bi bi-facebook"></i></a>
+               <a href="javascript:;"><i class="bi bi-twitter"></i></a>
+               <a href="javascript:;"><i class="bi bi-linkedin"></i></a>
+               <a href="javascript:;"><i class="bi bi-youtube"></i></a>
+               <a href="javascript:;"><i class="bi bi-instagram"></i></a>
+             </div>
+             <div class="mb-3 mt-3">
+              <h5 class="mb-0 fw-bold">Support</h5>
+              <p class="mb-0 text-muted">support@example.com</p>
+             </div>
+             <div class="">
+              <h5 class="mb-0 fw-bold">Toll Free</h5>
+              <p class="mb-0 text-muted">1800- 8xx 2xx</p>
+             </div>
+          </div>
+        </div>
+       </div><!--end row-->
+       <div class="my-5"></div>
+       <div class="row">
+         <div class="col-12">
+           <div class="text-center">
+            <h5 class="fw-bold mb-3">Download Mobile App</h5>
+           </div>
+          <div class="app-icon d-flex flex-column flex-sm-row align-items-center justify-content-center gap-2">
+            <div>
+              <a href="javascript:;">
+                <img src="assets/images/play-store.webp" width="160" alt="">
+              </a>
+            </div>
+            <div>
+              <a href="javascript:;">
+                <img src="assets/images/apple-store.webp" width="160" alt="">
+              </a>
+            </div>
+          </div>
+         </div>
+       </div><!--end row-->
+
+    </div>
+  </section>
+<!--end footer-->
+
+  <footer class="footer-strip text-center py-3 bg-section-2 border-top positon-absolute bottom-0">
+    <p class="mb-0 text-muted">© 2022. www.example.com | All rights reserved.</p>
+  </footer>

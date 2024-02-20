@@ -10,9 +10,10 @@
     <!-- Fav Icon  -->
     <link rel="shortcut icon" href="./images/favicon.png">
     <!-- Page Title  -->
-    <title>Culture</title>
+    <title>Biblioteque</title>
     <!-- StyleSheets  -->
     @include('liens.lien_css_temp')
+    @yield('css')
     @livewireStyles
 </head>
 
@@ -59,6 +60,11 @@
                             </div>
                             <div class="nk-header-tools">
                                 <ul class="nk-quick-nav">
+                                    <li class="dropdown notification-dropdown">
+                                        <a href="/" class="dropdown-toggle nk-quick-nav-icon" rel="home" title="Visit homepage" >
+                                            Accueil
+                                        </a>
+                                    </li>
                                     <li class="dropdown notification-dropdown">
                                         <a href="#" class="dropdown-toggle nk-quick-nav-icon" data-bs-toggle="dropdown">
                                             <div class="icon-status icon-status-info"><em class="icon ni ni-bell"></em></div>
@@ -116,7 +122,7 @@
 
                                     <li class="dropdown language-dropdown d-none d-sm-block me-n1">
                                         <a href="#" class="dropdown-toggle nk-quick-nav-icon" data-bs-toggle="dropdown">
-                                            <div class="quick-icon border border-light">
+                                            <div class="border quick-icon border-light">
                                                 <img class="icon" src="{{asset('assetsss/images/flags/english-sq.png')}}" alt="">
                                             </div>
                                         </a>
@@ -208,14 +214,14 @@
                             <li class="nk-menu-item has-sub">
                                 <a href="#" class="nk-menu-link nk-menu-toggle">
                                     <span class="nk-menu-icon"><em class="icon ni ni-template"></em></span>
-                                    <span class="nk-menu-text">Post</span>
+                                    <span class="nk-menu-text">Livre</span>
                                 </a>
                                 <ul class="nk-menu-sub">
                                     <li class="nk-menu-item">
-                                        <a href="{{route('auteur.post')}}" class="nk-menu-link"><span class="nk-menu-text">All Post</span></a>
+                                        <a href="{{route('auteur.post')}}" class="nk-menu-link"><span class="nk-menu-text">Tous les livres</span></a>
                                     </li>
                                     <li class="nk-menu-item">
-                                        <a href="{{route('auteur.ajoutpost')}}" class="nk-menu-link"><span class="nk-menu-text">Add Post</span></a>
+                                        <a href="{{route('auteurs.create')}}" class="nk-menu-link"><span class="nk-menu-text">Ajouter livres</span></a>
                                     </li>
                                     <li class="nk-menu-item">
                                         <a href="{{route('auteur.cate')}}" class="nk-menu-link"><span class="nk-menu-text">Categories</span></a>
@@ -236,22 +242,34 @@
                                     </li>
                                 </ul><!-- .nk-menu-sub -->
                             </li><!-- .nk-menu-item -->
-                            <li class="nk-menu-item">
-                                <a href="html/cms/settings-general.html" class="nk-menu-link">
-                                    <span class="nk-menu-icon"><em class="icon ni ni-setting-alt"></em></span>
+                            {{--<li class="nk-menu-item">
+                                <a href="{{route('paie')}}" class="nk-menu-link">
+                                    <span class="nk-menu-icon"><em class="icon ni ni-subsription-alt"></em></span>
                                     <span class="nk-menu-text">Abonnement</span>
                                 </a>
                             </li><!-- .nk-menu-item -->
                             <li class="nk-menu-item">
-                                <a href="html/cms/settings-general.html" class="nk-menu-link">
+                                <a href="#" class="nk-menu-link">
                                     <span class="nk-menu-icon"><em class="icon ni ni-setting-alt"></em></span>
                                     <span class="nk-menu-text">Setting</span>
+                                </a>
+                            </li><!-- .nk-menu-item -->
+                            <li class="nk-menu-item">
+                                <a href="{{route('admin.contact')}}" class="nk-menu-link">
+                                    <span class="nk-menu-icon"><em class="icon ni ni-comment-dots"></em></span>
+                                    <span class="nk-menu-text">Contact message</span>
+                                </a>
+                            </li><!-- .nk-menu-item -->--}}
+                            <li class="nk-menu-item">
+                                <a href="{{route('comm.index')}}" class="nk-menu-link">
+                                    <span class="nk-menu-icon"><em class=" icon ni ni-comment-dots"></em></span>
+                                    <span class="nk-menu-text">Commentaires</span>
                                 </a>
                             </li><!-- .nk-menu-item -->
                         </ul><!-- .nk-menu -->
                     </div>
                 </div>
-                @else @if(Auth::user()->utype === 'ATR')
+               @else @if(Auth::user()->utype === 'ATR')
                 <div class="nk-sidebar" data-content="sidebarMenu">
                     <div class="nk-sidebar-inner" data-simplebar>
                         <ul class="nk-menu nk-menu-md">
@@ -274,7 +292,65 @@
                                         <a href="{{route('auteur.post')}}" class="nk-menu-link"><span class="nk-menu-text">All Post</span></a>
                                     </li>
                                     <li class="nk-menu-item">
-                                        <a href="{{route('auteur.ajoutpost')}}" class="nk-menu-link"><span class="nk-menu-text">Add Post</span></a>
+                                        <a href="{{route('auteurs.create')}}" class="nk-menu-link"><span class="nk-menu-text">Add Post</span></a>
+                                    </li>
+                                    <li class="nk-menu-item">
+                                        <a href="{{route('auteur.cate')}}" class="nk-menu-link"><span class="nk-menu-text">Categories</span></a>
+                                    </li>
+                                </ul><!-- .nk-menu-sub -->
+                            </li><!-- .nk-menu-item -->
+                            <li class="nk-menu-item has-sub">
+                                <a href="{{route('profile')}}" class="nk-menu-link ">
+                                    <span class="nk-menu-icon"><em class="icon ni ni-user-alt"></em></span>
+                                    <span class="nk-menu-text">Profile</span>
+                                </a>
+
+                            </li><!-- .nk-menu-item -->
+                            {{--<li class="nk-menu-item">
+                                <a href="html/cms/settings-general.html" class="nk-menu-link">
+                                    <span class="nk-menu-icon"><em class="icon ni ni-setting-alt"></em></span>
+                                    <span class="nk-menu-text">Setting</span>
+                                </a>
+                            </li><!-- .nk-menu-item -->--}}
+                            <li class="nk-menu-item">
+                                <a href="{{route('paie')}}" class="nk-menu-link">
+                                    <span class="nk-menu-icon"><em class="icon ni ni-subsription-alt"></em></span>
+                                    <span class="nk-menu-text">Abonnement</span>
+                                </a>
+                            </li><!-- .nk-menu-item -->
+                            <li class="nk-menu-item">
+                                <a href="{{route('comm.index')}}" class="nk-menu-link">
+                                    <span class="nk-menu-icon"><em class=" icon ni ni-comment-dots"></em></span>
+                                    <span class="nk-menu-text">Commentaires</span>
+                                </a>
+                            </li><!-- .nk-menu-item -->
+                        </ul><!-- .nk-menu -->
+                    </div>
+                </div>
+               @else
+                <div class="nk-sidebar" data-content="sidebarMenu">
+                    <div class="nk-sidebar-inner" data-simplebar>
+                        <ul class="nk-menu nk-menu-md">
+                            <li class="nk-menu-heading">
+                                <h6 class="overline-title text-primary-alt">Dashboard</h6>
+                            </li><!-- .nk-menu-heading -->
+                            <li class="nk-menu-item">
+                                <a href="{{route('user.dashboard')}}" class="nk-menu-link">
+                                    <span class="nk-menu-icon"><em class="icon ni ni-dashboard"></em></span>
+                                    <span class="nk-menu-text">Dashboard</span>
+                                </a>
+                            </li><!-- .nk-menu-item -->
+                            <li class="nk-menu-item has-sub">
+                                <a href="#" class="nk-menu-link nk-menu-toggle">
+                                    <span class="nk-menu-icon"><em class="icon ni ni-template"></em></span>
+                                    <span class="nk-menu-text">Livres</span>
+                                </a>
+                                <ul class="nk-menu-sub">
+                                    <li class="nk-menu-item">
+                                        <a href="{{route('auteur.post')}}" class="nk-menu-link"><span class="nk-menu-text">Tous les livres</span></a>
+                                    </li>
+                                    <li class="nk-menu-item">
+                                        <a href="{{route('auteurs.create')}}" class="nk-menu-link"><span class="nk-menu-text">Add Post</span></a>
                                     </li>
                                     <li class="nk-menu-item">
                                         <a href="{{route('auteur.cate')}}" class="nk-menu-link"><span class="nk-menu-text">Categories</span></a>
@@ -289,53 +365,24 @@
 
                             </li><!-- .nk-menu-item -->
                             <li class="nk-menu-item">
+                                <a href="{{route('comm.index')}}" class="nk-menu-link">
+                                    <span class="nk-menu-icon"><em class=" icon ni ni-comment-dots"></em></span>
+                                    <span class="nk-menu-text">Commentaires</span>
+                                </a>
+                            </li><!-- .nk-menu-item -->
+                            {{--<li class="nk-menu-item">
                                 <a href="html/cms/settings-general.html" class="nk-menu-link">
                                     <span class="nk-menu-icon"><em class="icon ni ni-setting-alt"></em></span>
                                     <span class="nk-menu-text">Setting</span>
                                 </a>
-                            </li><!-- .nk-menu-item -->
-                        </ul><!-- .nk-menu -->
-                    </div>
-                </div>
-                @else
-                <div class="nk-sidebar" data-content="sidebarMenu">
-                    <div class="nk-sidebar-inner" data-simplebar>
-                        <ul class="nk-menu nk-menu-md">
-                            <li class="nk-menu-heading">
-                                <h6 class="overline-title text-primary-alt">Dashboard</h6>
-                            </li><!-- .nk-menu-heading -->
-                            <li class="nk-menu-item">
-                                <a href="{{route('user.dashboard')}}" class="nk-menu-link">
-                                    <span class="nk-menu-icon"><em class="icon ni ni-dashboard"></em></span>
-                                    <span class="nk-menu-text">Dashboard</span>
-                                </a>
-                            </li><!-- .nk-menu-item -->
-
-                            <li class="nk-menu-item has-sub">
-                                <a href="{{route('profile')}}" class="nk-menu-link ">
-                                    <span class="nk-menu-icon"><em class="icon ni ni-user-alt"></em></span>
-                                    <span class="nk-menu-text">Profile</span>
-                                </a>
-                            </li><!-- .nk-menu-item -->
-                             <li class="nk-menu-item has-sub">
-                                <a href="#" class="nk-menu-link ">
-                                    <span class="nk-menu-icon"><em class="icon ni ni-user-alt"></em></span>
-                                    <span class="nk-menu-text">Abonnement</span>
-                                </a>
-                            </li><!-- .nk-menu-item -->
-                            <li class="nk-menu-item">
-                                <a href="html/cms/settings-general.html" class="nk-menu-link">
-                                    <span class="nk-menu-icon"><em class="icon ni ni-setting-alt"></em></span>
-                                    <span class="nk-menu-text">Setting</span>
-                                </a>
-                            </li><!-- .nk-menu-item -->
+                            </li><!-- .nk-menu-item -->--}}
                         </ul><!-- .nk-menu -->
                     </div>
                 </div>
                 @endif
-				@endif
-
+                @endif
                {{$slot}}
+
 
             </div>
             <!-- wrap @e -->
@@ -343,7 +390,10 @@
         <!-- main @e -->
     </div>
 
+
+
     @include('liens.lien_js_temp')
+    @yield('css')
     @livewireScripts
     <script src="https://cdn.ckeditor.com/ckeditor5/25.0.0/classic/ckeditor.js"></script>
 {{--<script>

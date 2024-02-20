@@ -1,196 +1,157 @@
 
-	<div id="content" class="site-content">
-		<div class="wrapper">
-			<div class="entry-content">
-				<div class="post-listing style-grid align-content-max">
-					<article class="entry entry-episode has-post-thumbnail">
-						<div class="entry-media">
-							<a href="single-episode.html" class="shine-on-hover"><img src="tmp/sample-540x540.jpg" alt="" width="540" height="540"></a>
-						</div>
-						<header class="entry-header">
-							<h2 class="entry-title"><a href="single-episode.html" rel="bookmark">#13: The joy of putting ideas into reality and pen to paper</a></h2>
-							<div class="entry-meta">
-								<span class="posted-in">
-									<span class="screen-reader-text">Posted in:</span> <em class="mdi mdi-folder-outline"></em> <a href="episodes.html" rel="category tag">Season 1</a>
-									<span class="posted-on">
-										<span class="screen-reader-text">Posted on</span> <em class="mdi mdi-calendar-blank"></em> <a href="single-episode.html" rel="bookmark"><span class="entry-date published">Sep 13, 2023</span><span class="updated">Sep 13, 2023</span></a>
-									</span>
-								</span>
-							</div>
-						</header>
-					</article>
-					<article class="entry entry-episode has-post-thumbnail">
-						<div class="entry-media">
-							<a href="single-episode.html" class="shine-on-hover"><img src="tmp/sample-540x540.jpg" alt="" width="540" height="540"></a>
-						</div>
-						<header class="entry-header">
-							<h2 class="entry-title"><a href="single-episode.html" rel="bookmark">#12: Visiting my best friend's city for the first time</a></h2>
-							<div class="entry-meta">
-								<span class="posted-in">
-									<span class="screen-reader-text">Posted in:</span> <em class="mdi mdi-folder-outline"></em> <a href="episodes.html" rel="category tag">Season 1</a>
-									<span class="posted-on">
-										<span class="screen-reader-text">Posted on</span> <em class="mdi mdi-calendar-blank"></em> <a href="single-episode.html" rel="bookmark"><span class="entry-date published">Sep 3, 2023</span><span class="updated">Sep 4, 2023</span></a></span>
-								</span>
-							</div>
-						</header>
-					</article>
-					<article class="entry entry-episode episode-type-video has-post-thumbnail">
-						<div class="entry-media">
-							<a href="single-episode-video.html" class="shine-on-hover"><img src="tmp/sample-540x540.jpg" alt="" width="540" height="540"></a>
-						</div>
-						<header class="entry-header">
-							<h2 class="entry-title"><a href="single-episode-video.html" rel="bookmark">#11: An interesting watch I would definitely recommend</a></h2>
-							<div class="entry-meta">
-								<span class="posted-in">
-									<span class="screen-reader-text">Posted in:</span> <em class="mdi mdi-folder-outline"></em> <a href="episodes.html" rel="category tag">Season 1</a>
-									<span class="posted-on">
-										<span class="screen-reader-text">Posted on</span> <em class="mdi mdi-calendar-blank"></em> <a href="single-episode.html" rel="bookmark"><span class="entry-date published">Aug 23, 2023</span><span class="updated">Aug 23, 2023</span></a></span>
-								</span>
-							</div>
-						</header>
-					</article>
-					<article class="entry entry-episode has-post-thumbnail">
-						<div class="entry-media">
-							<a href="single-episode.html" class="shine-on-hover"><img src="tmp/sample-540x540.jpg" alt="" width="540" height="540"></a>
-						</div>
-						<header class="entry-header">
-							<h2 class="entry-title"><a href="single-episode.html" rel="bookmark">#10: Along the carefree journey through Italy</a></h2>
-							<div class="entry-meta">
-								<span class="posted-in">
-									<span class="screen-reader-text">Posted in:</span> <em class="mdi mdi-folder-outline"></em> <a href="episodes.html" rel="category tag">Season 1</a>
-									<span class="posted-on">
-										<span class="screen-reader-text">Posted on</span> <em class="mdi mdi-calendar-blank"></em> <a href="single-episode.html" rel="bookmark"><span class="entry-date published">Aug 15, 2023</span><span class="updated">Aug 23, 2023</span></a></span>
-								</span>
-							</div>
-						</header>
-					</article>
-					<article class="entry entry-episode has-post-thumbnail">
-						<div class="entry-media">
-							<a href="single-episode.html" class="shine-on-hover"><img src="tmp/sample-540x540.jpg" alt="" width="540" height="540"></a>
-						</div>
-						<header class="entry-header">
-							<h2 class="entry-title"><a href="single-episode.html" rel="bookmark">#9: There's always something to do but rest</a></h2>
-							<div class="entry-meta">
-								<span class="posted-in">
-									<span class="screen-reader-text">Posted in:</span> <em class="mdi mdi-folder-outline"></em> <a href="episodes.html" rel="category tag">Season 1</a>
-									<span class="posted-on">
-										<span class="screen-reader-text">Posted on</span> <em class="mdi mdi-calendar-blank"></em> <a href="single-episode.html" rel="bookmark"><span class="entry-date published">Aug 4, 2023</span><span class="updated">Aug 5, 2023</span></a></span>
-								</span>
-							</div>
-						</header>
-					</article>
-					<article class="entry entry-episode has-post-thumbnail">
-						<div class="entry-media">
-							<a href="single-episode.html" class="shine-on-hover"><img src="tmp/sample-540x540.jpg" alt="" width="540" height="540"></a>
-						</div>
-						<header class="entry-header">
-							<h2 class="entry-title"><a href="single-episode.html" rel="bookmark">#8: What if my paths go back home</a></h2>
-							<div class="entry-meta">
-								<span class="posted-in">
-									<span class="screen-reader-text">Posted in:</span> <em class="mdi mdi-folder-outline"></em> <a href="episodes.html" rel="category tag">Season 1</a>
-									<span class="posted-on">
-										<span class="screen-reader-text">Posted on</span> <em class="mdi mdi-calendar-blank"></em> <a href="single-episode.html" rel="bookmark"><span class="entry-date published">Jul 29, 2023</span><span class="updated">Jul 29, 2023</span></a></span>
-								</span>
-							</div>
-						</header>
-					</article>
-					<article class="entry entry-episode has-post-thumbnail">
-						<div class="entry-media">
-							<a href="single-episode.html" class="shine-on-hover"><img src="tmp/sample-540x540.jpg" alt="" width="540" height="540"></a>
-						</div>
-						<header class="entry-header">
-							<h2 class="entry-title"><a href="single-episode.html" rel="bookmark">#7: Nature's balance must be restored now</a></h2>
-							<div class="entry-meta">
-								<span class="posted-in">
-									<span class="screen-reader-text">Posted in:</span> <em class="mdi mdi-folder-outline"></em> <a href="episodes.html" rel="category tag">Season 1</a>
-									<span class="posted-on">
-										<span class="screen-reader-text">Posted on</span> <em class="mdi mdi-calendar-blank"></em> <a href="single-episode.html" rel="bookmark"><span class="entry-date published">Jul 21, 2023</span><span class="updated">Jul 21, 2023</span></a></span>
-								</span>
-							</div>
-						</header>
-					</article>
-					<article class="entry entry-episode episode-type-video has-post-thumbnail">
-						<div class="entry-media">
-							<a href="single-episode-video.html" class="shine-on-hover"><img src="tmp/sample-540x540.jpg" alt="" width="540" height="540"></a>
-						</div>
-						<header class="entry-header">
-							<h2 class="entry-title"><a href="single-episode-video.html" rel="bookmark">#6: The beauty of a clear night sky</a></h2>
-							<div class="entry-meta">
-								<span class="posted-in">
-									<span class="screen-reader-text">Posted in:</span> <em class="mdi mdi-folder-outline"></em> <a href="episodes.html" rel="category tag">Season 1</a>
-									<span class="posted-on">
-										<span class="screen-reader-text">Posted on</span> <em class="mdi mdi-calendar-blank"></em> <a href="single-episode-video.html" rel="bookmark"><span class="entry-date published">Jun 17, 2023</span><span class="updated">Jun 17, 2023</span></a></span>
-								</span>
-							</div>
-						</header>
-					</article>
-					<article class="entry entry-episode has-post-thumbnail">
-						<div class="entry-media">
-							<a href="single-episode.html" class="shine-on-hover"><img src="tmp/sample-540x540.jpg" alt="" width="540" height="540"></a>
-						</div>
-						<header class="entry-header">
-							<h2 class="entry-title"><a href="single-episode.html" rel="bookmark">#5: Some things I'll never forget</a></h2>
-							<div class="entry-meta">
-								<span class="posted-in">
-									<span class="screen-reader-text">Posted in:</span> <em class="mdi mdi-folder-outline"></em> <a href="episodes.html" rel="category tag">Season 1</a>
-									<span class="posted-on">
-										<span class="screen-reader-text">Posted on</span> <em class="mdi mdi-calendar-blank"></em> <a href="single-episode.html" rel="bookmark"><span class="entry-date published">Jun 9, 2023</span><span class="updated">Jun 9, 2023</span></a></span>
-								</span>
-							</div>
-						</header>
-					</article>
-					<article class="entry entry-episode has-post-thumbnail">
-						<div class="entry-media">
-							<a href="single-episode.html" class="shine-on-hover"><img src="tmp/sample-540x540.jpg" alt="" width="540" height="540"></a>
-						</div>
-						<header class="entry-header">
-							<h2 class="entry-title"><a href="single-episode.html" rel="bookmark">#4: The serenity of a blue calm sky</a></h2>
-							<div class="entry-meta">
-								<span class="posted-in">
-									<span class="screen-reader-text">Posted in:</span> <em class="mdi mdi-folder-outline"></em> <a href="episodes.html" rel="category tag">Season 1</a>
-									<span class="posted-on">
-										<span class="screen-reader-text">Posted on</span> <em class="mdi mdi-calendar-blank"></em> <a href="single-episode.html" rel="bookmark"><span class="entry-date published">Jun 2, 2023</span><span class="updated">Jun 2, 2023</span></a></span>
-								</span>
-							</div>
-						</header>
-					</article>
-					<article class="entry entry-episode has-post-thumbnail">
-						<div class="entry-media">
-							<a href="single-episode.html" class="shine-on-hover"><img src="tmp/sample-540x540.jpg" alt="" width="540" height="540"></a>
-						</div>
-						<header class="entry-header">
-							<h2 class="entry-title"><a href="single-episode.html" rel="bookmark">#3: It is not easy to stay still and do nothing</a></h2>
-							<div class="entry-meta">
-								<span class="posted-in">
-									<span class="screen-reader-text">Posted in:</span> <em class="mdi mdi-folder-outline"></em> <a href="episodes.html" rel="category tag">Season 1</a>
-									<span class="posted-on">
-										<span class="screen-reader-text">Posted on</span> <em class="mdi mdi-calendar-blank"></em> <a href="single-episode.html" rel="bookmark"><span class="entry-date published">May 29, 2023</span><span class="updated">May 29, 2023</span></a></span>
-								</span>
-							</div>
-						</header>
-					</article>
-					<article class="entry entry-episode has-post-thumbnail">
-						<div class="entry-media">
-							<a href="single-episode.html" class="shine-on-hover"><img src="tmp/sample-540x540.jpg" alt="" width="540" height="540"></a>
-						</div>
-						<header class="entry-header">
-							<h2 class="entry-title"><a href="single-episode.html" rel="bookmark">#2: On the road again and missing family</a></h2>
-							<div class="entry-meta">
-								<span class="posted-in">
-									<span class="screen-reader-text">Posted in:</span> <em class="mdi mdi-folder-outline"></em> <a href="episodes.html" rel="category tag">Season 1</a>
-									<span class="posted-on">
-										<span class="screen-reader-text">Posted on</span> <em class="mdi mdi-calendar-blank"></em> <a href="single-episode.html" rel="bookmark"><span class="entry-date published">May 29, 2023</span><span class="updated">May 29, 2023</span></a></span>
-								</span>
-							</div>
-						</header>
-					</article>
-					<div class="pagination">
-						<span aria-current="page" class="page-numbers current"><span class="screen-reader-text">Page </span>1</span>
-						<a class="page-numbers" href="episodes.html"><span class="screen-reader-text">Page </span>2</a>
-						<a class="next page-numbers" href="episodes.html"><span class="screen-reader-text">Next Page </span></a>
-					</div>
-				</div>
-			</div>
-		</div>
-	</div>
+  <!--start page content-->
+  <div class="page-content">
 
+  <!--start carousel-->
+  <section class="slider-section">
+      <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
+            aria-current="true"></button>
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"></button>
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"></button>
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="3"></button>
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="4"></button>
+        </div>
+        <div class="carousel-inner">
+          <div class="carousel-item active bg-primary">
+            <div class="row d-flex align-items-center">
+              <div class="col d-none d-lg-flex justify-content-center">
+                <div class="">
+                  <h3 class="h3 fw-light text-white fw-bold">Bienvenue</h3>
+                  <h1 class="h1 text-white fw-bold">Sur votre bibliotèque</h1>
+                  <p class="text-white fw-bold"><i>Epanouissez vous avec la lecture</i></p>
+                  <div class="">
+                  </div>
+                </div>
+              </div>
+              <div class="col">
+                <img src="{{asset('lien/images/sliders/biblio3.jpg')}}" class="img-fluid" alt="...">
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item bg-red">
+            <div class="row d-flex align-items-center">
+              <div class="col d-none d-lg-flex justify-content-center">
+                <div class="">
+                  <h3 class="h3 fw-light text-white fw-bold">Bienvenue</h3>
+                  <h1 class="h1 text-white fw-bold">Sur votre bibliotèque</h1>
+                  <p class="text-white fw-bold"><i>Epanouissez vous avec la lecture</i></p>
+                  <div class="">
+                  </div>
+                </div>
+              </div>
+              <div class="col">
+                <img src="{{asset('lien/images/sliders/biblio4.jpg')}}" class="img-fluid" alt="...">
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item bg-purple">
+            <div class="row d-flex align-items-center">
+              <div class="col d-none d-lg-flex justify-content-center">
+                <div class="">
+                <h3 class="h3 fw-light text-white fw-bold">Bienvenue</h3>
+                  <h1 class="h1 text-white fw-bold">Sur votre bibliotèque</h1>
+                  <p class="text-white fw-bold"><i>Epanouissez vous avec la lecture</i></p>
+                  <div class="">
+                  </div>
+                </div>
+              </div>
+              <div class="col">
+                <img src="{{asset('lien/images/sliders/im4.jpg')}}" class="img-fluid" alt="...">
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item bg-yellow">
+            <div class="row d-flex align-items-center">
+              <div class="col d-none d-lg-flex justify-content-center">
+                <div class="">
+                <h3 class="h3 fw-light text-white fw-bold">Bienvenue</h3>
+                  <h1 class="h1 text-white fw-bold">Sur votre bibliotèque</h1>
+                  <p class="text-white fw-bold"><i>Epanouissez vous avec la lecture</i></p>
+                  <div class="">
+                  </div>
+                </div>
+              </div>
+              <div class="col">
+                <img src="{{asset('lien/images/sliders/im5.jpg')}}" class="img-fluid" alt="...">
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item bg-green">
+            <div class="row d-flex align-items-center">
+              <div class="col d-none d-lg-flex justify-content-center">
+                <div class="">
+                <h3 class="h3 fw-light text-white fw-bold">Bienvenue</h3>
+                  <h1 class="h1 text-white fw-bold">Sur votre bibliotèque</h1>
+                  <p class="text-white fw-bold"><i>Epanouissez vous avec la lecture</i></p>
+                  <div class="">
+                  </div>
+                </div>
+              </div>
+              <div class="col">
+                <img src="{{asset('lien/images/sliders/biblio8.jpg')}}" class="img-fluid" alt="...">
+              </div>
+            </div>
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
+          data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions"
+          data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+    </section><br><br>
+    <!--end carousel-->
+
+    <!--start Featured Products slider-->
+    <section class="section-padding">
+      <div class="container">
+        <div class="text-center pb-3">
+          <h3 class="mb-0 h3 fw-bold">Nous vous recommandons</h3>
+          <p class="mb-0 text-capitalize">Plus de 100 millions de personnes lisent ici</p>
+        </div>
+        <div class="product-thumbs">
+          @foreach($livre as $livres)
+          @if($livres->publie == 1)
+          <div class="card">
+            <div class="position-relative overflow-hidden">
+              <div
+                class="product-options d-flex align-items-center justify-content-center gap-2 mx-auto position-absolute bottom-0 start-0 end-0">
+                <a href="javascript:;"><i class="bi bi-heart"></i></a>
+                <a href="javascript:;"><i class="bi bi-basket3"></i></a>
+                <a href="javascript:;" data-bs-toggle="modal" data-bs-target="#QuickViewModal"><i
+                    class="bi bi-zoom-in"></i></a>
+              </div>
+              <a href="{{route('detail', ['livre_id'=>$livres->id])}}">
+                <img src="{{asset('medias')}}/{{$livres->image}}" class="card-img-top" alt="...">
+              </a>
+            </div>
+            <div class="card-body">
+              <div class="product-info text-center">
+                <h6 class="mb-1 fw-bold product-name">{{$livres->titre}}</h6>
+                <div class="ratings mb-1 h6">
+                  <i class="bi bi-star-fill text-warning"></i>
+                  <i class="bi bi-star-fill text-warning"></i>
+                  <i class="bi bi-star-fill text-warning"></i>
+                  <i class="bi bi-star-fill text-warning"></i>
+                  <i class="bi bi-star-fill text-warning"></i>
+                </div>
+                <p class="mb-0 h6 fw-bold product-price">{{$livres->auteur}}</p>
+              </div>
+            </div>
+          </div>
+          @endif
+          @endforeach
+        </div>
+      </div>
+    </section>
+    <!--end Featured Products slider-->
+
+  </div>
+  <!--end page content-->

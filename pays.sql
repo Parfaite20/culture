@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Hôte : 127.0.0.1
--- Généré le : jeu. 04 jan. 2024 à 15:27
+-- Généré le : lun. 29 jan. 2024 à 13:29
 -- Version du serveur : 10.4.32-MariaDB
 -- Version de PHP : 8.2.12
 
@@ -56,15 +56,36 @@ CREATE TABLE `categories` (
   `updated_at` timestamp NULL DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 
+-- --------------------------------------------------------
+
 --
--- Déchargement des données de la table `categories`
+-- Structure de la table `commentaires`
 --
 
-INSERT INTO `categories` (`id`, `name`, `created_at`, `updated_at`) VALUES
-(1, 'Parfaitee', '2023-12-29 12:34:44', '2023-12-30 22:21:29'),
-(2, 'Auteur', '2023-12-30 22:21:52', '2023-12-30 22:21:52'),
-(3, 'User', '2024-01-03 22:00:52', '2024-01-03 22:00:52'),
-(4, 'Admin', '2024-01-03 22:01:57', '2024-01-03 22:01:57');
+CREATE TABLE `commentaires` (
+  `id` bigint(20) UNSIGNED NOT NULL,
+  `name` varchar(255) DEFAULT NULL,
+  `email` varchar(255) DEFAULT NULL,
+  `commente` text DEFAULT NULL,
+  `post_id` bigint(20) UNSIGNED DEFAULT NULL,
+  `created_at` timestamp NULL DEFAULT NULL,
+  `updated_at` timestamp NULL DEFAULT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+
+-- --------------------------------------------------------
+
+--
+-- Structure de la table `contacts`
+--
+
+CREATE TABLE `contacts` (
+  `id` bigint(20) UNSIGNED NOT NULL,
+  `name` varchar(255) DEFAULT NULL,
+  `email` varchar(255) DEFAULT NULL,
+  `comment` text DEFAULT NULL,
+  `created_at` timestamp NULL DEFAULT NULL,
+  `updated_at` timestamp NULL DEFAULT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 
 -- --------------------------------------------------------
 
@@ -99,16 +120,25 @@ CREATE TABLE `migrations` (
 --
 
 INSERT INTO `migrations` (`id`, `migration`, `batch`) VALUES
-(1, '2014_10_12_000000_create_users_table', 1),
-(2, '2014_10_12_100000_create_password_resets_table', 1),
-(3, '2014_10_12_200000_add_two_factor_columns_to_users_table', 1),
-(4, '2019_08_19_000000_create_failed_jobs_table', 1),
-(5, '2019_12_14_000001_create_personal_access_tokens_table', 1),
-(6, '2023_12_14_124336_create_sessions_table', 1),
-(7, '2023_12_14_160040_create_categories_table', 1),
-(8, '2023_12_20_170723_create_articles_table', 1),
-(9, '2023_12_20_174405_create_posts_table', 1),
-(10, '2023_12_28_150912_create_profiles_table', 1);
+(115, '2024_01_07_191835_add_complet_profil_field_to_profiles_table', 2),
+(116, '2024_01_07_192637_add_complet_profil_field_to_profiles_table', 3),
+(117, '2024_01_07_193024_add_complet_profil_field_to_profiles_table', 4),
+(346, '2014_10_12_000000_create_users_table', 5),
+(347, '2014_10_12_100000_create_password_resets_table', 5),
+(348, '2014_10_12_200000_add_two_factor_columns_to_users_table', 5),
+(349, '2019_08_19_000000_create_failed_jobs_table', 5),
+(350, '2019_12_14_000001_create_personal_access_tokens_table', 5),
+(351, '2023_12_14_124336_create_sessions_table', 5),
+(352, '2023_12_14_160040_create_categories_table', 5),
+(353, '2023_12_20_170723_create_articles_table', 5),
+(354, '2023_12_20_174405_create_posts_table', 5),
+(355, '2023_12_28_150912_create_profiles_table', 5),
+(356, '2024_01_07_175854_create_settings_table', 5),
+(357, '2024_01_07_193303_add_complet_profil_field_to_profiles_table', 5),
+(358, '2024_01_08_210045_create_contacts_table', 5),
+(359, '2024_01_12_103322_add_publie_to_posts_table', 5),
+(360, '2024_01_13_004129_create_commentaires_table', 5),
+(361, '2024_01_13_235026_create_souscriptions_table', 5);
 
 -- --------------------------------------------------------
 
@@ -149,25 +179,19 @@ CREATE TABLE `personal_access_tokens` (
 CREATE TABLE `posts` (
   `id` bigint(20) UNSIGNED NOT NULL,
   `titre` varchar(255) DEFAULT NULL,
+  `mini_content` varchar(255) DEFAULT NULL,
   `content` text DEFAULT NULL,
   `audio` varchar(255) DEFAULT NULL,
   `video` varchar(255) DEFAULT NULL,
   `image` varchar(255) DEFAULT NULL,
-  `date_publi` date DEFAULT NULL,
   `slug` varchar(255) DEFAULT NULL,
   `tag` varchar(255) DEFAULT NULL,
   `categorie_id` bigint(20) UNSIGNED DEFAULT NULL,
   `user_id` bigint(20) UNSIGNED DEFAULT NULL,
+  `publie` tinyint(1) DEFAULT 0,
   `created_at` timestamp NULL DEFAULT NULL,
   `updated_at` timestamp NULL DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
-
---
--- Déchargement des données de la table `posts`
---
-
-INSERT INTO `posts` (`id`, `titre`, `content`, `audio`, `video`, `image`, `date_publi`, `slug`, `tag`, `categorie_id`, `user_id`, `created_at`, `updated_at`) VALUES
-(7, 'aaaa', 'bbbb', 'medias/snVBb6V1zct23LIx61ImjidDUzHfHCJGAcvvq0lb.mp3', 'medias/couQWvW9RjaoUFzYVAJWMC2GcpJB2qbdBOdCQvnu.mp4', 'medias/dTDYLMl4fZcoPezjoc4NdoQ6oZiOxvhwuawdZZ3D.jpg', '2023-12-28', 'cccc', 'dddd', NULL, NULL, '2023-12-29 13:45:56', '2023-12-29 13:45:56');
 
 -- --------------------------------------------------------
 
@@ -184,18 +208,10 @@ CREATE TABLE `profiles` (
   `ville` varchar(255) DEFAULT NULL,
   `adresse` varchar(255) DEFAULT NULL,
   `user_id` bigint(20) UNSIGNED DEFAULT NULL,
+  `complet_profil` tinyint(1) DEFAULT 0,
   `created_at` timestamp NULL DEFAULT NULL,
   `updated_at` timestamp NULL DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
-
---
--- Déchargement des données de la table `profiles`
---
-
-INSERT INTO `profiles` (`id`, `image`, `mobile1`, `mobile2`, `pays`, `ville`, `adresse`, `user_id`, `created_at`, `updated_at`) VALUES
-(1, NULL, '12345678', '876543321', 'Bénin', 'Cotonou', 'Cotonou', 2, '2023-12-29 11:56:41', '2023-12-30 22:14:10'),
-(2, NULL, '111111111', NULL, NULL, NULL, NULL, 1, '2023-12-30 22:40:28', '2023-12-31 12:36:37'),
-(3, NULL, '55555555', '66666666', 'BBBBB', 'CCCCCC', 'DDDDD', 3, '2023-12-31 12:27:42', '2023-12-31 12:28:28');
 
 -- --------------------------------------------------------
 
@@ -212,12 +228,36 @@ CREATE TABLE `sessions` (
   `last_activity` int(11) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 
+-- --------------------------------------------------------
+
 --
--- Déchargement des données de la table `sessions`
+-- Structure de la table `settings`
 --
 
-INSERT INTO `sessions` (`id`, `user_id`, `ip_address`, `user_agent`, `payload`, `last_activity`) VALUES
-('wbj3KaubSS7bbZLk0ToVSRfGAOtRCcx55jsruspn', 2, '127.0.0.1', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36 Edg/120.0.0.0', 'YTo2OntzOjY6Il90b2tlbiI7czo0MDoiVHBrVUU5UzBmQzlYVjNiWnRZa0ZQN05HZ001dEVTMURMc1FvZElVaCI7czo2OiJfZmxhc2giO2E6Mjp7czozOiJvbGQiO2E6MDp7fXM6MzoibmV3IjthOjA6e319czo5OiJfcHJldmlvdXMiO2E6MTp7czozOiJ1cmwiO3M6MzY6Imh0dHA6Ly8xMjcuMC4wLjE6ODAwMC9hdXRldXIvYWRkcG9zdCI7fXM6NTA6ImxvZ2luX3dlYl81OWJhMzZhZGRjMmIyZjk0MDE1ODBmMDE0YzdmNThlYTRlMzA5ODlkIjtpOjI7czo1OiJ1dHlwZSI7czozOiJBVFIiO3M6MjE6InBhc3N3b3JkX2hhc2hfc2FuY3R1bSI7czo2MDoiJDJ5JDEwJEkwUUM4SmYwUmViSUNOdTJKTnFZcy5zeFN0bDRKVTdZQXo5cnhKcDFzanoxQmNjY2g4Ny5HIjt9', 1704376893);
+CREATE TABLE `settings` (
+  `id` bigint(20) UNSIGNED NOT NULL,
+  `created_at` timestamp NULL DEFAULT NULL,
+  `updated_at` timestamp NULL DEFAULT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+
+-- --------------------------------------------------------
+
+--
+-- Structure de la table `souscriptions`
+--
+
+CREATE TABLE `souscriptions` (
+  `id` bigint(20) UNSIGNED NOT NULL,
+  `plan_name` varchar(255) DEFAULT NULL,
+  `price` decimal(8,2) DEFAULT NULL,
+  `duree` int(11) DEFAULT NULL,
+  `start_date` date DEFAULT NULL,
+  `end_date` date DEFAULT NULL,
+  `status` enum('actif','expiré','annulé') DEFAULT NULL,
+  `user_id` bigint(20) UNSIGNED DEFAULT NULL,
+  `created_at` timestamp NULL DEFAULT NULL,
+  `updated_at` timestamp NULL DEFAULT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 
 -- --------------------------------------------------------
 
@@ -243,15 +283,6 @@ CREATE TABLE `users` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 
 --
--- Déchargement des données de la table `users`
---
-
-INSERT INTO `users` (`id`, `name`, `email`, `email_verified_at`, `password`, `two_factor_secret`, `two_factor_recovery_codes`, `two_factor_confirmed_at`, `utype`, `remember_token`, `current_team_id`, `profile_photo`, `created_at`, `updated_at`) VALUES
-(1, 'Admin', 'admin@gmail.com', NULL, '$2y$10$ZHdR7kXrsJdCRxOnbuTc1eF5BwTyGR24dfb.CKoLQg4BB6YGA7pJK', NULL, NULL, NULL, 'ADM', NULL, NULL, NULL, '2023-12-29 11:47:13', '2023-12-31 11:32:43'),
-(2, 'Auteur', 'auteur@gmail.com', NULL, '$2y$10$I0QC8Jf0RebICNu2JNqYs.sxStl4JU7YAz9rxJp1sjz1Bccch87.G', NULL, NULL, NULL, 'ATR', NULL, NULL, NULL, '2023-12-29 11:51:46', '2023-12-30 22:17:46'),
-(3, 'User', 'user@gmail.com', NULL, '$2y$10$g0LdpODezzaTTpwkd6hwEOQz6wPsrlK2KIHuOB89RZX9bhh/pUdr2', NULL, NULL, NULL, 'USR', NULL, NULL, NULL, '2023-12-29 11:53:22', '2023-12-29 11:53:22');
-
---
 -- Index pour les tables déchargées
 --
 
@@ -267,6 +298,20 @@ ALTER TABLE `articles`
 -- Index pour la table `categories`
 --
 ALTER TABLE `categories`
+  ADD PRIMARY KEY (`id`),
+  ADD UNIQUE KEY `categories_name_unique` (`name`);
+
+--
+-- Index pour la table `commentaires`
+--
+ALTER TABLE `commentaires`
+  ADD PRIMARY KEY (`id`),
+  ADD KEY `commentaires_post_id_foreign` (`post_id`);
+
+--
+-- Index pour la table `contacts`
+--
+ALTER TABLE `contacts`
   ADD PRIMARY KEY (`id`);
 
 --
@@ -320,6 +365,19 @@ ALTER TABLE `sessions`
   ADD KEY `sessions_last_activity_index` (`last_activity`);
 
 --
+-- Index pour la table `settings`
+--
+ALTER TABLE `settings`
+  ADD PRIMARY KEY (`id`);
+
+--
+-- Index pour la table `souscriptions`
+--
+ALTER TABLE `souscriptions`
+  ADD PRIMARY KEY (`id`),
+  ADD KEY `souscriptions_user_id_foreign` (`user_id`);
+
+--
 -- Index pour la table `users`
 --
 ALTER TABLE `users`
@@ -340,7 +398,19 @@ ALTER TABLE `articles`
 -- AUTO_INCREMENT pour la table `categories`
 --
 ALTER TABLE `categories`
-  MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
+  MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT;
+
+--
+-- AUTO_INCREMENT pour la table `commentaires`
+--
+ALTER TABLE `commentaires`
+  MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT;
+
+--
+-- AUTO_INCREMENT pour la table `contacts`
+--
+ALTER TABLE `contacts`
+  MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT;
 
 --
 -- AUTO_INCREMENT pour la table `failed_jobs`
@@ -352,7 +422,7 @@ ALTER TABLE `failed_jobs`
 -- AUTO_INCREMENT pour la table `migrations`
 --
 ALTER TABLE `migrations`
-  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=11;
+  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=362;
 
 --
 -- AUTO_INCREMENT pour la table `personal_access_tokens`
@@ -364,19 +434,31 @@ ALTER TABLE `personal_access_tokens`
 -- AUTO_INCREMENT pour la table `posts`
 --
 ALTER TABLE `posts`
-  MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=8;
+  MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT;
 
 --
 -- AUTO_INCREMENT pour la table `profiles`
 --
 ALTER TABLE `profiles`
-  MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
+  MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT;
+
+--
+-- AUTO_INCREMENT pour la table `settings`
+--
+ALTER TABLE `settings`
+  MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT;
+
+--
+-- AUTO_INCREMENT pour la table `souscriptions`
+--
+ALTER TABLE `souscriptions`
+  MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT;
 
 --
 -- AUTO_INCREMENT pour la table `users`
 --
 ALTER TABLE `users`
-  MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
+  MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT;
 
 --
 -- Contraintes pour les tables déchargées
@@ -390,6 +472,12 @@ ALTER TABLE `articles`
   ADD CONSTRAINT `articles_categorie_id_foreign` FOREIGN KEY (`categorie_id`) REFERENCES `categories` (`id`) ON DELETE CASCADE;
 
 --
+-- Contraintes pour la table `commentaires`
+--
+ALTER TABLE `commentaires`
+  ADD CONSTRAINT `commentaires_post_id_foreign` FOREIGN KEY (`post_id`) REFERENCES `posts` (`id`) ON DELETE CASCADE;
+
+--
 -- Contraintes pour la table `posts`
 --
 ALTER TABLE `posts`
@@ -401,6 +489,12 @@ ALTER TABLE `posts`
 --
 ALTER TABLE `profiles`
   ADD CONSTRAINT `profiles_user_id_foreign` FOREIGN KEY (`user_id`) REFERENCES `users` (`id`) ON DELETE CASCADE;
+
+--
+-- Contraintes pour la table `souscriptions`
+--
+ALTER TABLE `souscriptions`
+  ADD CONSTRAINT `souscriptions_user_id_foreign` FOREIGN KEY (`user_id`) REFERENCES `users` (`id`) ON DELETE CASCADE;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;

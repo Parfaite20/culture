@@ -2,12 +2,19 @@
 
 namespace App\Http\Livewire\Auteur;
 
+use App\Models\Livre;
 use Livewire\Component;
+
+use Illuminate\Support\Facades\Auth;
 
 class AuteurDashboardComponent extends Component
 {
+
+
     public function render()
     {
-        return view('livewire.auteur.auteur-dashboard-component')->layout('layouts.templateUser');
+        //$users = Auth::user();
+        $posts = Auth::user()->posts;
+        return view('livewire.auteur.auteur-dashboard-component', ['posts'=>$posts])->layout('layouts.templateUser');
     }
 }

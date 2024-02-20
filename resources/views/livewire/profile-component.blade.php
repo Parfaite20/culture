@@ -7,6 +7,13 @@
                                     <div class="nk-block-head-content">
                                         <h2 class="nk-block-title page-title">Mon Profile</h2>
                                     </div>
+                                    <div class="text-center">
+                                        @if($message = Session::get('success'))
+                                            <div class="alert alert-success">
+                                                <p>{{$message}}</p>
+                                            </div>
+                                        @endif
+                                    </div>
                                 </div><!-- .nk-block-head -->
                                 <div class="nk-block nk-block-lg">
                                     <div class="card card-bordered">

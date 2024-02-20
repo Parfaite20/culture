@@ -28,6 +28,7 @@ class CreateNewUser implements CreatesNewUsers
             'password' =>['required' , 'string',
                 Password::min(8)->letters()->mixedCase()->numbers()->symbols()
             ],
+            //'utype' => ['required', 'string'],
             'terms' => Jetstream::hasTermsAndPrivacyPolicyFeature() ? ['accepted', 'required'] : '',
         ])->validate();
 
@@ -35,6 +36,9 @@ class CreateNewUser implements CreatesNewUsers
             'name' => $input['name'],
             'email' => $input['email'],
             'password' => Hash::make($input['password']),
+            //'utype' => $input['utype'],
         ]);
+        
+       
     }
 }

@@ -10,7 +10,7 @@
 						<div class="hover">
 							<h4>New to our website?</h4>
 							<p>There are advances being made in science and technology everyday, and a good example of this is the</p>
-							
+
 						</div>
 					</div>
 				</div>
@@ -28,12 +28,20 @@
 							</div>
 							<div class="col-md-12 form-group">
 								<input type="password" class="form-control" id="password" name="password" placeholder="Mot de passe" required autocomplete="new-password">
-							</div>                            
+							</div>
 							<div class="col-md-12 form-group">
 								<input type="password" class="form-control" id="password" name="password_confirmation" placeholder="Confirmer mot de passe" required autocomplete="new-password">
 							</div>
+                            {{--<div class="col-md-12 form-group">
+                                <label for="">Selectionner un type</label>
+								<select class="form-control" id="selected" name="utype" placeholder="Selectionner un type" required>
+                                    <option value=""></option>
+                                    <option value="ATR">Auteur</option>
+                                    <option value="USR">User</option>
+                                </select>
+							</div>--}}
 							<div class="col-md-12 form-group">
-								<button type="submit" value="register" name="register" class="primary-btn">S'enregistrer</button>	
+								<button type="submit" value="register" name="register" class="primary-btn">S'enregistrer</button>
 							</div>
 						</form>
 					</div>

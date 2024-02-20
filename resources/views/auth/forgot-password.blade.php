@@ -67,7 +67,6 @@
 							</div>
 							<div class="col-md-12 form-group">
 								<button type="submit" value="submit" class="primary-btn" name="submit">Email Password Reset Link</button>
-								
 							</div>
 						</form>
 					</div>

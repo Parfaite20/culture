@@ -21,7 +21,7 @@ class EditcategorieComponent extends Component
         $categorie = Categorie::where('id', $categorie_slug)->first();
         $this->categorie_id = $categorie->id;
         $this->name = $categorie->name;
-        /*$this->slug = $categorie->slug;
+        /*$this->slug = $categorie->slug; 
         $this->content = $categorie->content;*/
 
     }

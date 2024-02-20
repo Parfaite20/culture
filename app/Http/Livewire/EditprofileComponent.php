@@ -54,9 +54,6 @@ class EditprofileComponent extends Component
     {
 
         if ($this->profile_id) {
-            $user->name = $this->name;
-            $user->utype = $this->utype;
-            $user->save();
 
             $profile = Profile::find($this->profile_id);
             $profile->mobile1 = $this->mobile1;
@@ -64,7 +61,12 @@ class EditprofileComponent extends Component
             $profile->pays = $this->pays;
             $profile->ville = $this->ville;
             $profile->adresse = $this->adresse;
+            $profile->complet_profil = true;
             $profile->save();
+
+            $user->name = $this->name;
+            $user->utype = $this->utype;
+            $user->save();
         }
         else {
             $user = User::find(Auth::user()->id);
@@ -76,12 +78,13 @@ class EditprofileComponent extends Component
             $user->profile->pays = $this->pays;
             $user->profile->ville = $this->ville;
             $user->profile->adresse = $this->adresse;
+            $user->profile->complet_profil = true;
             $user->profile->save();
         }
 
         
         $this->dispatchBrowserEvent("showMessage", ["message"=>"Mise à jour effectuée avec succès"]);
-        return redirect()->to('/profile');
+        return redirect()->to('/profile')->with('success', 'Votre profil est à jour, merci');
     }
 
     public function render()

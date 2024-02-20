@@ -11,8 +11,8 @@ class Categorie extends Model
 
     protected $guarded = [];
 
-    public function posts()
+    public function livres()
     {
-        return $this->belongsTo(Post::class);
+        return $this->belongsTo(Livre::class);
     }
 }

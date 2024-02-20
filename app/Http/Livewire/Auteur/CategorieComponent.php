@@ -11,14 +11,15 @@ use Illuminate\Validation\Rule;
 class CategorieComponent extends Component
 {
 
-    use WithPagination;
+    //use WithPagination;
     protected $paginationTheme = "bootstrap";
 
     public $name;
     public $search = "";
     public $newValue = "";
+    /*public $newCategorie = "";
 
-    /*public $ajoutcate = false;
+    public $ajoutcate = false;
 
     public function showCate()
     {
@@ -97,10 +98,11 @@ class CategorieComponent extends Component
 
     public function render()
     {
-        $searchCri = "%".$this->search."%";
-
-        $categorie = Categorie::where("name", "like", $searchCri)->paginate(3);
+        /*$searchCri = "%".$this->search."%";
         $this->emitself('refresh-me');
+        $categorie = Categorie::where("name", "like", $searchCri)->paginate(3);*/
+
+        $categorie = Categorie::all();
         return view('livewire.auteur.categorie-component', ['categorie'=>$categorie])->layout('layouts.templateUser');
     }
 }

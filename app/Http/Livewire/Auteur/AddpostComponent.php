@@ -4,7 +4,7 @@ namespace App\Http\Livewire\Auteur;
 
 //use App\Models\Article;
 use App\Models\Categorie;
-use App\Models\Post;
+use App\Models\Livre;
 use App\Models\User;
 use Illuminate\Support\Facades\Auth;
 //use Carbon\Carbon;
@@ -85,7 +85,7 @@ class AddpostComponent extends Component
             //'user_id' => Auth::id(),
         ]);*/
 
-        $post = new Post();
+        $post = new Livre();
         $post->titre = $this->titre;
         $post->content = $this->content;
         $post->audio = $this->audio->store('medias');
@@ -117,7 +117,7 @@ class AddpostComponent extends Component
     {
         $user = User::all();
         $categorie = Categorie::all();
-        $post = Post::all();
+        $post = Livre::all();
         return view('livewire.auteur.addpost-component', ['user'=>$user], ['categorie'=>$categorie], ['post'=>$post])->layout('layouts.templateUser');
     }
 }
